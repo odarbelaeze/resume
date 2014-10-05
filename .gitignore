@@ -1,0 +1,12 @@
+# Latex aux files
+*.aux
+*.log
+*.out
+
+# Latex output
+*.pdf
+!sources/*.pdf
+
+# Recovery files
+*~
+
