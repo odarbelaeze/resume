@@ -10,3 +10,5 @@
 # Recovery files
 *~
 
+# Node js modules
+node_modules
