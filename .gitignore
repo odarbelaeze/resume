@@ -5,10 +5,14 @@
 
 # Latex output
 *.pdf
-!sources/*.pdf
+!support/*.pdf
 
 # Recovery files
 *~
 
 # Node js modules
 node_modules
+
+# Vim swap files
+*.swp
+
