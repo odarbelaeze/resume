@@ -1,0 +1,32 @@
+\documentclass[english, 12pt, letter]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+
+\usepackage[
+    unicode=true,
+    bookmarks=true,bookmarksnumbered=true,bookmarksopen=false,
+    breaklinks=false,pdfborder={0 0 0},
+    backref=false,colorlinks=true
+]{hyperref}
+
+\hypersetup{%
+    linkcolor=Blue
+}
+
+\makeatletter
+
+\usepackage{bookmark}
+\usepackage[
+    backend=biber,
+    style=numeric-comp,
+    ]{biblatex}
+\addbibresource{publications.bib}
+\usepackage{babel}
+
+\begin{document}
+\nocite{*}
+\printbibliography[title=Publications]
+\end{document}
+

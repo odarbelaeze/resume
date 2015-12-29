@@ -16,3 +16,12 @@ node_modules
 # Vim swap files
 *.swp
 
+# Stuff
+CV-imagethumbnail
+*.bbl
+*.bcf
+*.bib
+*.blg
+*.run.xml
+*.zip
+
