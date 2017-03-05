@@ -1,7 +1,0 @@
-{
-  "devDependencies": {
-    "gulp": "^3.8.8",
-    "gulp-notify": "^2.0.0",
-    "gulp-shell": "^0.2.9"
-  }
-}
