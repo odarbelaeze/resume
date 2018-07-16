@@ -32,7 +32,7 @@
 % optional
 % \phone{+57(6) 890 6069}
 % optional
-\mobile{+57(313) 712 5660}
+\mobile{+57 313 712 5660}
 % optional
 %\fax{+43(0)999 7777}
 % optional
@@ -56,6 +56,16 @@
 \providecommand{\LyX}{\texorpdfstring%
   {L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX\@}
   {LyX}}
+
+\newcommand*{\cvreference}[7][.25em]{%
+    \cvitem[#1]{}{%
+    \ifthenelse{\equal{#2}{}}{}{\textbf{#2}\newline}%
+    \ifthenelse{\equal{#3}{}}{}{#3\newline}%
+    \ifthenelse{\equal{#4}{}}{}{\addresssymbol~#4\newline}%
+    \ifthenelse{\equal{#5}{}}{}{#5\newline}%
+    \ifthenelse{\equal{#6}{}}{}{\emailsymbol~\href{mailto:#6}{\texttt{#6}}\newline}%
+    \ifthenelse{\equal{#7}{}}{}{\phonesymbol~#7}
+}}
 
 
 \begin{document}
@@ -301,9 +311,10 @@
         {}
         {}
         {%
-            % CONTINUE HERE %
-            Scientific software development, implementation of Monte Carlo
-            algorithms for simulating physic properties of materials.
+            In this internship, I developed some scientific software, mostly
+            python scripts and implemented Monte Carlo algorithms using Fortran
+            and C++. I used those scripts and programs to perform atomistic
+            simulations of magnetic materials.
         }
 
 \cventry{Aug. 2009\\--May 2011}
@@ -312,9 +323,9 @@
         {}
         {}
         {%
-            Teaching assistant in the course practice of Mechanical Physics,
-            Physics of electricity and magnetism, Cellular Biology, Physics of
-            Waves and Oscillations
+            I performed as a teaching assistant in the course practice of
+            Mechanical Physics, Physics of electricity and magnetism, Cellular
+            Biology, and Physics of Waves and Oscillations.
         }
 
 
@@ -326,12 +337,11 @@
 
 \cvlanguage{English}
            {Near-Native}
-           {MET, \\ Score: 119 (B2 Listening --- C1 Reading and Grammar)}
-
-\cvlanguage{English}
-           {Near-Native}
-           {Berlitz, \\ Accumulated Score: B2}
-
+           {%
+               MET, Score: 119 (B2 Listening --- C1 Reading and Grammar)\\
+               Berlitz, Accumulated Score: B2\\
+               I have improved a lot since my last exam
+           }
 
 \section{Computer~skills}
 
@@ -566,6 +576,27 @@
         {Manzanares (Caldas, Colombia) Majorship}
         {December 1st, 2007}
         {(earned each year by the best student graduating from high school in Manzanares)}
+
+
+\section{References}
+
+
+\cvreference%
+        {Ivan Girotto}
+        {Information \& Communication Technology Section}
+        {The Abdus Salam-International Centre for Theoretical Physics}
+        {Strada Costiera, 11 --- I--34151, Trieste, Italy}
+        {igirotto@ictp.it}
+        {+39 040 2240 484}
+
+
+\cvreference%
+        {Dr.~Axel Kohlmeyer}
+        {Institute for Computational Molecular Science (035--07)}
+        {College of Science and Technology, Temple University}
+        {Philadelphia, PA 19122}
+        {akohlmey@gmail.com}
+        {+1 215 204 4218}
 
 
 \end{document}
