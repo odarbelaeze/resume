@@ -1,0 +1,611 @@
+\documentclass[12pt,english]{moderncv}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+\setlength{\parskip}{\medskipamount}
+\setlength{\parindent}{0pt}
+\usepackage{babel}
+
+% \usepackage{bookmark}
+
+
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\moderncvtheme[green]{casual}
+% possible themes are "classic" and "casual"
+% optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+
+% required
+\firstname{Oscar David\\}
+% required
+\familyname{Arbel\'aez Echeverri}
+
+% optional, remove the line if not wanted
+\title{Curriculum Vitae}
+
+% optional
+% \address{street and number}{postcode city}
+% '\\' adds a line break
+\address{Carrera 23  \#55A--35}{Manizales, Colombia}
+
+% optional
+% \phone{+57(6) 890 6069}
+% optional
+\mobile{+57 313 712 5660}
+% optional
+%\fax{+43(0)999 7777}
+% optional
+\email{odarbelaeze@unal.edu.co}
+% optional
+\extrainfo{%
+    \href{https://github.com/odarbelaeze}{github.com/odarbelaeze}
+}
+
+% optional
+% \photo[height]{name}
+% 'height' is the height the picture is resized to
+% 'name' is the name of the picture file
+% \photo[64pt]{CV-image}
+
+% optional
+% \quote{"Everyone wants to be in the upper hand."}
+
+\makeatother
+
+\providecommand{\LyX}{\texorpdfstring%
+  {L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX\@}
+  {LyX}}
+
+\newcommand*{\cvreference}[7][.25em]{%
+    \cvitem[#1]{\color{color1}$\bullet$}{%
+    \ifthenelse{\equal{#2}{}}{}{\textbf{#2}\newline}%
+    \ifthenelse{\equal{#3}{}}{}{#3\newline}%
+    \ifthenelse{\equal{#4}{}}{}{\addresssymbol~#4\newline}%
+    \ifthenelse{\equal{#5}{}}{}{#5\newline}%
+    \ifthenelse{\equal{#6}{}}{}{\emailsymbol~\href{mailto:#6}{\texttt{#6}}\newline}%
+    \ifthenelse{\equal{#7}{}}{}{\phonesymbol~#7}
+}}
+
+
+\begin{document}
+
+\maketitle
+
+\begin{centering}
+    Il codice sorgente ed i documenti di supporto per il curriculum vitae sono disponibili alla pagina \url{https://github.com/odarbelaeze/resume}. 
+    Sono disponibile a fornire documenti aggiuntivi a quelli presenti sulla pagina web nel caso alcuni siano mancanti.
+\end{centering}
+
+
+\section{Istruzione}
+
+\cventry{2012--2016}
+        {Laurea magistrale in fisica}
+        {Universidad Nacional de Colombia}
+        {Manizales}
+        {Colombia}
+        {%
+            Ho redatto la tesi magistrale intitolata ``Simulazioni con metodo Monte Carlo di bit patterned media applicate a dispositivi di memorizzazione magnetica dei dati''.
+            Questo lavoro di tesi ha richiesto la comprensione della tecnologia dei dischi rigidi  allo stato dell'arte e della simulazione di materiali magnetici.
+            Il risultato principale di questo lavoro \`e stato un modello accurato, sebbene relativamente semplice, dei bit patterned media. 
+            %I developed the master thesis entitled: Monte Carlo simulation of
+            %bit patterned media applied to data storage devices. 
+            % This thesis
+            % involved understanding modern hard disk drive technology, and
+            % simulation of magnetic materials. 
+            % Its main result was an accurate
+            % albeit simple model for bit patterned media.
+        }
+
+\cventry{2008--2012}
+        {Laurea triennale in ingegneria fisica}
+        {Universidad Nacional de Colombia}
+        {Manizales}
+        {Colombia}
+        {}
+
+
+\section{Produzione scientifica}
+
+\cventry{Marzo 2018}
+        {Vegas: Software package for the atomistic simulation of magnetic materials}
+        {Revista Mexicana de Física}
+        {Sociedad Mexicana de Física}
+        {}
+        {DOI:\@ \href{https://doi.org/10.31349/RevMexFis.64.490}{10.31349/RevMexFis.64.490}}
+
+\cventry{Marzo 2018}
+        {Atomistic modelling of magnetic nano-granular thin films}
+        {Physica E:\@ Low-dimensional Systems and Nanostructures}
+        {Elsevier}
+        {}
+        {DOI:\@ \href{https://doi.org/10.1016/j.physe.2017.11.017}{10.1016/j.physe.2017.11.017}}
+
+\cventry{Febbraio 2017}
+        {%
+            Spontaneous Perpendicular Anisotropy in Ultra-thin Ferromagnetic
+            Films%
+        }
+        {Journal of Superconductivity and Novel Magnetism}
+        {Springer}
+        {}
+        {DOI:\@ \href{https://doi.org/10.1007/s10948-017-4005-9}{10.1007/s10948--017--4005--9}}
+
+\cventry{Febbraio 2017}
+        {%
+            Surface anisotropy and particle size influence on hysteresis loops
+            in La2/3Ca1/3MnO3 nanoparticles: A simulation approach%
+        }
+        {Journal of Magnetism and Magnetic Materials}
+        {Elsevier}
+        {}
+        {DOI:\@ \href{https://doi.org/10.1016/j.jmmm.2016.10.108}{10.1016/j.jmmm.2016.10.108}}
+
+\cventry{Giugno 2016}
+        {%
+            Implementation details of a variational method to solve the time
+            independent Schrödinger equation%
+        }
+        {Revista mexicana de física E}
+        {Sociedad mexicana de física}
+        {}
+        {DOI:\@ \href{https://doi.org/10.31349/RevMexFis.64.490}{10.31349/RevMexFis.64.490}}
+
+\cventry{Dicembre 2015}
+        {Atomistic Simulation of static magnetic properties of bit patterned media}
+        {Physica E}
+        {Elsevier}
+        {}
+        {DOI:\@ \href{https://doi.org/10.1016/j.physe.2015.12.016}{10.1016/j.physe.2015.12.016}}
+
+\cventry{Ottobre 2014}
+        {%
+            Simulation of magnetotransport properties of
+            ferromagnetic/antiferromagnetic multilayers of manganites%
+        }
+        {Journal of Superconductivity and Novel Magnetism}
+        {Springer}
+        {}
+        {DOI:\@ \href{https://doi.org/10.1007/s10948-014-2827-2}{10.1007/s10948--014--2827--2}}
+
+
+\section{Esperienza lavorativa}
+
+\cventry{Aprile 2016\\ ad oggi}
+        {Full stack software engineer}
+        {BairesDev}
+        {}
+        {}
+        {%
+            Ho fornito servizi di ``full stack contractor software engineering'' a
+            \href{https://www.adroll.com/}{AdRoll} attraverso
+            \href{http://www.bairesdev.com/}{BairesDev}.
+            Le mie responsabilit\`a includevano scrivere e gestire il codice che permette a inserzionisti di far girare ``native ad-campaigns'' tramite AdRoll, sia in backend che in frontend.
+        }
+
+\cventry{Febbraio 2016\\--Maggio. 2017}
+        {Professore a contratto}
+        {Universidad Nacional de Colombia}
+        {}
+        {}
+        {%
+            Ho insegnato corsi presso il dipartimento di ``exact and natural sciences'' della Universidad Nacional de Colombia.
+            Ho insegnato ``Simulation 1'' durante il primo trimestre del 2016, ``Informatica 3'' durante il secondo trimestre del 2016 e nel primo trimestre del 2017 ad ingegneria fisica.
+        }
+
+\cventry{Marzo 2015\\--Marzo 2016}
+        {Consulente in tecnologia scientifica}
+        {Universidad Nacional de Colombia}
+        {}
+        {}
+        {%
+            Ho fornito consulenza ed aiuto nei processi di acquisto di clusters di ridotta dimensione per simulazioni scientifiche per un gruppo di ricerca nel dipartimento di fisica della Universidad Nacional de Colombia. 
+            Ho inoltre installato il cluster personalmente per ridurre i costi e per effettuare operazioni di gestione.
+            Altre mansioni includevano insegnare come utilizzare il cluster e creare un sito web che permetta di migliorare la comunicazione tra i gruppi di ricerca e con l'esterno. 
+            Il principale risultato \`e stato un utilizzo totale del cluster per parecchi mesi.
+        }
+
+\cventry{Luglio 2016\\--Agosto 2016}
+        {Stagista estivo}
+        {Computational Magnetism Group, University of York}
+        {United Kindom}
+        {}
+        {%
+            Ho avuto il compito di ultimare e testare il modulo CUDA per il codice per simulazioni scientifiche \textsc{Vampire}. Il codice \`e disponibile al sito \url{http://vampire.york.ac.uk/}.
+        }
+
+\cventry{Maggio 2015\\--Luglio 2015}
+        {Stagista estivo}
+        {Computational Magnetism Group, University of York}
+        {United Kindom}
+        {}
+        {%
+            Ho avuto il compito di guidare un ridotto team di sviluppo per introdurre una nuova funzione nel codice per simulazioni scientifiche \textsc{Vampire}.
+            La principale difficolt\`a del progetto era integrare il modulo CUDA all'interno del codice principale implementato in seriale e in parallelo con MPI in C++.
+            La feature \`e ancora in attesa di perfezionamento e approvazione: \url{https://github.com/richard-evans/vampire/pull/4}.
+        }
+
+\cventry{Maggio 2015\\--Luglio 2015}
+        {Progetto: Web tools for smart selection of scientific articles applying network analysis}
+        {Tree of Science}
+        {}
+        {}
+        {%
+            Ho rivestito una posizione manageriale dove ho dovuto guidare un ridotto team di sviluppo per rilasciare la versione per la produzione dello strumento ``Tree of Science'' ora presso \url{http://tos.manizales.unal.edu.co}.
+            % For this job I had a managerial position where I had to lead a
+            % small development team in order to deliver a production version of
+            % the Tree of Science tool now hosted at
+            % \url{http://tos.manizales.unal.edu.co}.
+        }
+
+\cventry{Settembre 2014\\--Febbraio 2015}
+        {Progetto: Web tools for smart selection of scientific articles applying network analysis}
+        {Universidad Nacional de Colombia}
+        {}
+        {}
+        {%
+            Ho aiutato la ricerca e analisi della rete di algoritmi (algoritmi grafici) e indicatori di definizione. 
+            Ho aiutato nel design e nella esecuzione di un workshop scientifico di analisi dati con python.
+            Il prodotto principale era un prototipo operativo dello strumento ``Tree of science'' che ha lo scopo di fornire aiuto e guida sia a ricercatori giovani che esperti nella ricerca della letteratura scientifica necessaria per comprendere un certo ambito.
+        }
+
+\cventry{Febbraio 2013\\--Febbraio 2015}
+        {Vincitore di borsa di studio}
+        {Universidad Nacional de Colombia}
+        {}
+        {}
+        {%
+            Ho ricevuto una borsa di studio ed ho lavorato come giovane ricercatore nel gruppo accademico di ricerca PCM Computational Applications.
+        }
+
+\cventry{Agosto 2013\\--Dicembre 2016}
+        {Consulente IT}
+        {Fundación Alas de Cristal}
+        {}
+        {}
+        {%
+            Ho gestito il sito web della fondazione ed ho facilitato le relazioni della stessa con altri business partner nel settore IT.
+        }
+
+\cventry{Luglio 2013\\--Settembre 2013}
+        {Web developing volunteer staff}
+        {Universidad de Caldas}
+        {}
+        {}
+        {%
+            Ho sviluppato il sito web per la mostra sul libro del 2013 a Manizales \textit{(Feria del Libro de Manizales)}. Ho lavorato con un designer dell'universit\`a di Manizales per ottenere il miglior prodotto possibile utilizzando il minor numero di beni.
+        }
+
+\cventry{Gennaio 2013\\--Settembre 2013}
+        {Assistente tecnico del chairman}
+        {Universidad Nacional de Colombia}
+        {}
+        {}
+        {%
+            Ho aiutato ad organizzare la ``5th Latin-American Conference
+            in Networked Electronic Media (LACNEM)''. 
+            Ho prestato supporto al chairman della conferenza con lo sviluppo del sito della conferenza.
+        }
+
+\cventry{Ottobre 2012\\--Febbraio 2013}
+        {Stagista}
+        {Universidad Nacional de Colombia}
+        {}
+        {}
+        {%
+            Ho sviluppato codici scientifici, in particolar modo script in python e codici basati sull'algoritmo Monte Carlo in Fortran e C++. Ho usato questi script e codici per fare simulazioni atomistiche di materiali magnetici.
+        }
+
+\cventry{Agosto 2009\\--Maggio 2011}
+        {Stagista}
+        {Universidad Nacional de Colombia}
+        {}
+        {}
+        {%
+            Ho lavorato come assistente tecnico durante le esercitazioni pratiche di fisica meccanica, fisica dell'elettricit\`a e del magnetismo, biologia cellulare e fisica delle onde e delle oscillazioni presso la Universidad Nacional de Colombia.
+        }
+
+
+\section{Competenze linguistiche}
+
+\cvlanguage{Spagnolo}
+           {Madre lingua}
+           {}
+
+\cvlanguage{Inglese}
+           {Molto fluente}
+           {%
+               MET, punteggio: 119 (B2 ascolto --- C1 comprensione scritta e grammatica)\\
+               Berlitz, punteggio complessivo: B2\\
+               Sono migliorato molto dall'ultimo esame
+           }
+
+\section{Competenze informatiche}
+
+\cvcomputer{Sistemi operativi}            {Linux\\Windows\\MacOS}
+           {Admin}         {AWS\\Docker\\Nginx}
+
+\cvcomputer{Linguaggi di programmazione}   {Rust\\C/C++\\Python\\JavaScript}
+           {Automazione}    {Autotools\\Dist Utils\\Unittest\\Gulp\\CMake}
+
+\cvcomputer{Linguaggi di programmazione scientifica}    {NumPy\\SciPy\\Matplotlib\\Bokhe\\Pandas}
+           {Software tipografici}    {pandoc\\markdown\\\LaTeX{}\\\LyX{}}
+
+
+\cvcomputer{Software di web~design}    {React\\ES6\\HTML5\\sass}
+           {Software di backend}       {Flask\\Django}
+
+
+\section{Partecipazione a workshop e conferenze}
+
+\cventry{Agosto\\2017}
+        {Taller de Introducción a R y R Studio}
+        {%
+            Nodo Nacional de Bioinformática, Comunidad de Desarrolladoresde
+            Sofware en Bioinformática, Centro de Ciencias Genómicas (CCG)
+        }
+        {Cuernavaca, Mexico}
+        {30 Luglio --- 3 Agosto 2018}
+        {(Istruttore)}
+
+\cventry{Dicembre\\2017}
+        {CODATA-RDA School on Data Science}
+        {CODATA, Research Data Aliance, ICTP-SAIFR, Universidade Estadual Paulista}
+        {São Paulo, Brasil}
+        {30 Novembre --- 16 Dicembre 2017}
+        {(Aiutante)}
+
+\cventry{Luglio\\2017}
+        {2017 CODATA-RDA Research Data Science Summer School}
+        {CODATA, Research Data Aliance, Abdus Salam International Centre for Theoretical Physics}
+        {Trieste, Italy}
+        {10 --- 28 Luglio 2017}
+        {(Partecipante)}
+
+\cventry{Luglio\\2015}
+        {20th International conference on magnetism}
+        {Club español de magnetismo}
+        {Barcelona, Spain}
+        {5 --- 10 Luglio 2015}
+        {(Partecipante con presentazione di un poster)}
+
+\cventry{Maggio\\2015}
+        {Workshop on accelerated high performance computing in computational sciences}
+        {Abdus Salam International Centre for Theoretical Physics}
+        {Trieste, Italy}
+        {25 Maggio --- 5 Giugno 2015}
+        {(Partecipante)}
+
+\cventry{Settembre\\2014}
+        {2nd Workshop on Statistical Physics}
+        {Universidad de los Andes, Universidad Nacional de Colombia}
+        {Bogotá, Colombia}
+        {22 --- 26 Settembre 2014}
+        {(Partecipante con presentazione orale)}
+
+\cventry{Marzo\\2014}
+        {LAMMPS Users and Developers Workshop and Symposium}
+        {Abdus Salam International Centre for Theoretical Physics}
+        {Trieste, Italia}
+        {10 --- 21 Marzo 2014}
+        {(Partecipante)}
+
+\cventry{Marzo\\2014}
+        {%
+            Advanced Techniques for Scientific Programming and Management
+            of Open Source Software Packages
+        }
+        {Abdus Salam International Centre for Theoretical Physics}
+        {Trieste, Italia}
+        {24 --- 28 Marzo 2014}
+        {(Partecipante)}
+
+\cventry{Settembre\\2013}
+        {5th Latin American Workshop on Networked Electronic Media}
+        {Universidad Nacional de Colombia}
+        {Manizales, Colombia}
+        {2 --- 4 Settembre 2013}
+        {(Organizzatore)}
+
+
+\cventry{Settembre\\2013}
+        {1st Workshop on Applied Mathematics --- Region Cafetera}
+        {Universidad Nacional de Colombia}
+        {Manizales, Colombia}
+        {2 --- 4 Settembre 2013}
+        {(Organizzatore)}
+
+\cventry{Settembre\\2012}
+        {III Congreso Nacional de Ingeniería Física}
+        {EAFIT University}
+        {Medellín, Colombia}
+        {10 --- 14 Settembre 2012}
+        {(Partecipante con presentazione orale)}
+
+\cventry{Febbraio\\2012}
+        {Seminario Internacional de Ingeniería Biomédica (SIB2012)}
+        {Universidad de los Andes}
+        {Bogotá, Colombia}
+        {10 --- 14 Settembre 2012}
+        {(Partecipante)}
+
+\cventry{Settembre\\2010}
+        {II Congreso Nacional de Ingeniería Física}
+        {Universidad Tecnol\'ogica de Pereira}
+        {Pereira, Colombia}
+        {6 --- 10 Settembre 2010}
+        {(Partecipante)}
+
+\cventry{Luglio\\2010}
+        {IX Latin American Workshop on Magnetism, Magnetic Materials and their Applications}
+        {Universidad Nacional de Colombia}
+        {Manizales, Colombia}
+        {26 --- 30 Luglio 2010}
+        {(Partecipante)}
+
+\cventry{Luglio\\2010}
+        {IX Latin American School on Magnetism}
+        {Universidad Nacional de Colombia}
+        {Manizales, Colombia}
+        {21 --- 24 Luglio 2010}
+        {(Partecipante)}
+
+
+\section{Formazione aggiuntiva}
+
+\cventry{Primavera\\2018}
+        {Software carpentry instructor certification}
+        {}
+        {Software carpentry}
+        {Erin Becker}
+        {9 Aprile 2018}
+
+\cventry{Fine\\2013}
+        {Machine Learning}
+        {}
+        {Corso}
+        {Associate Professor Andrew Ng, Computer Science Department, Stanford University}
+        {12 Novembre 2013}
+
+\cventry{Fine\\2013}
+        {HTML5 Game Development}
+        {Creazione di applicazioni ``High Performance'' per il web}
+        {Udacity}
+        {Peter Lubbers and Colt McAnlis}
+        {8 Novembre 2013}
+
+\cventry{Estate\\2013}
+        {Curso Introductorio a la Simulación Monte Carlo}
+        {Corso introduttorio alle simulationi con metodo Monte Carlo}
+        {Universidad Católica de Pereira}
+        {}
+        {11 Settembre 2013}
+
+\cventry{Primavera\\2013}
+        {Computer Science 101}
+        {}
+        {Corso}
+        {Nick Parlante, Lecturer in Computer Science, Stanford University}
+        {13 Maggio 2013}
+
+\cventry{Fine\\2011}
+        {Estructura del lenguaje de programación C++ (Nivel II)}
+        {Struttura del linguaggio di programmazione C++ (Secondo livello)}
+        {Servicio Nacional de Aprendizaje, SENA}
+        {}
+        {9 Gennaio 2012}
+
+\cventry{Estate\\2011}
+        {Metrología: Patrones, instrumentos y tolerancias}
+        {Metrologia: Schemi, strumenti e tolleranze}
+        {Servicio Nacional de Aprendizaje, SENA}
+        {}
+        {11 Novembre 2011}
+
+\cventry{Primavera\\2011}
+        {Estructura del lenguaje de programación C++ (Nivel I)}
+        {Struttura del linguaggio di programmazione C++ (Primo livello)}
+        {Servicio Nacional de Aprendizaje, SENA}
+        {}
+        {18 Marzo 2011}
+
+
+\section{Riconoscimenti}
+
+\cventry{2016}
+        {Distinción meritoria en tesis de posgrado}
+        {Distinzione con merito per tesi magistrale}
+        {Universidad Nacional de Colombia}
+        {}
+        {(premiato dal consiglio di facolt\`a dopo la raccomandazione del relatore esterno della tesi)}
+
+\cventry{2013}
+        {Beca Grado de Honor de Pregrado}
+        {Borsa di studio per laurea con lode}
+        {Universidad Nacional de Colombia}
+        {}
+        {}
+
+\cventry{2012}
+        {Grado de Honor}
+        {Laurea con lode}
+        {Universidad Nacional de Colombia}
+        {}
+        {}
+
+
+\cventry{2009 --- 2011}
+        {Exención de pago de derechos académicos}
+        {Esenzione dal pagamento delle tasse universitarie}
+        {Universidad Nacional de Colombia}
+        {}
+        {(ottenuto due volte nel 2009, nel 2010 e 2012)}
+
+
+\cventry{2007}
+        {Decreto de Honores No. 0787}
+        {Decreto di Onore No. 0787}
+        {Gobernacíon de Caldas}
+        {6 Dicembre 2007}
+        {(riconoscimento annuale ai dieci migliori studenti, insegnanti e istituzioni d'insegnamento di Caldas)}
+
+
+\cventry{2007}
+        {Orden José Joaquin Montes}
+        {Ordine di José Joaquin Montes}
+        {Manzanares (Caldas, Colombia) Majorship}
+        {1 Dicembre 2007}
+        {(riconoscimento annuale al miglior studente diplomato tra le scuole superiori di Manzanares)}
+
+
+\section{Referenze}
+
+
+\cvreference%
+        {Prof.~Elisabeth Restrepo Parra}
+        {Departamento de Ciencias Exactas y Naturales}
+        {Universidad Nacional de Colombia}
+        {Carrera 27 \# 64--60, Manizales, Colombia}
+        {erestrepopa@unal.edu.co}
+        {+57 321 700 4351}
+
+
+\cvreference%
+        {Ivan Girotto}
+        {Information \& Communication Technology Section}
+        {The Abdus Salam-International Centre for Theoretical Physics}
+        {Strada Costiera, 11 --- I--34151, Trieste, Italy}
+        {igirotto@ictp.it}
+        {+39 040 2240 484}
+
+
+\cvreference%
+        {Dr.~Axel Kohlmeyer}
+        {Institute for Computational Molecular Science (035--07)}
+        {College of Science and Technology, Temple University}
+        {Philadelphia, PA 19122}
+        {akohlmey@gmail.com}
+        {+1 215 204 4218}
+
+
+\cvreference%
+        {Dr.~Richard F. L. Evans}
+        {The Department of Physics}
+        {University of York}
+        {YO10 5DD, York, UK}
+        {richard.evans@york.ac.uk}
+        {+44 (0)1904 322822}
+
+
+\cvreference%
+        {Robert Quick}
+        {Deputy Director Science Gateways Research Center}
+        {Indiana University}
+        {}
+        {rquick@iu.edu}
+        {+1 317 274 5260}
+
+
+\end{document}
