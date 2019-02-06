@@ -1,5 +1,4 @@
-%% LyX 2.0.6 created this file.  For more info, see http://www.lyx.org/.%% Do not edit unless you really know what you are doing.
-\documentclass[12pt,english]{moderncv}
+\documentclass[12pt,english,letter,sans]{moderncv}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \setcounter{secnumdepth}{2}
@@ -7,63 +6,75 @@
 \setlength{\parskip}{\medskipamount}
 \setlength{\parindent}{0pt}
 \usepackage{babel}
+\usepackage[top=3cm, bottom=2cm]{geometry}
 
 % \usepackage{bookmark}
 
 
 \makeatletter
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
-\moderncvtheme[green]{casual}
+\moderncvtheme[red]{classic}
 % possible themes are "classic" and "casual"
 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
 
 % required
-\firstname{Oscar David\\}
+\firstname{Oscar}
 % required
-\familyname{Arbel\'aez Echeverri}
+\familyname{Arbel\'aez}
 
 % optional, remove the line if not wanted
-\title{Brief Curriculum Vitae}
+% \title{Curriculum Vitae}
 
 % optional
 % \address{street and number}{postcode city}
 % '\\' adds a line break
-\address{Cll. 62A \#18--97}{Manizales, Colombia}
+% \address{Carrera 23  \#55A--35}{Manizales, Colombia}
 
 % optional
-\phone{+57(6) 890 6069}
+% \phone{+57(6) 890 6069}
 % optional
-\mobile{+57(313) 712 5660}
+% \mobile{+57 313 712 5660}
 % optional
 %\fax{+43(0)999 7777}
 % optional
 \email{odarbelaeze@unal.edu.co}
 % optional
-\extrainfo{github.com/odarbelaeze}
+\extrainfo{%
+    \href{https://github.com/odarbelaeze}{github.com/odarbelaeze}
+}
 
 % optional
 % \photo[height]{name}
 % 'height' is the height the picture is resized to
 % 'name' is the name of the picture file
-\photo[64pt]{CV-image}
+% \photo[64pt]{CV-image}
 
 % optional
 % \quote{"Everyone wants to be in the upper hand."}
 
 \makeatother
 
-\providecommand{\LyX}{\texorpdfstring%
-  {L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX\@}
-  {LyX}}
-
 \begin{document}
 
 \maketitle
 
+\begin{centering}
+    The source and support documents for the present resume are available at
+    \url{https://github.com/odarbelaeze/resume}, feel free to ask for
+    additional support documents if some are missing.
+\end{centering}
+
 
 \section{Education}
 
-\cventry{2012--2015}
+\cventry{current}
+        {Materials Science and Engineering (EDMX)}
+        {École polytechnique fédérale de Lausanne}
+        {Lausanne}
+        {Switzerland}
+        {}
+
+\cventry{2012--2016}
         {Master in Science --- Physics}
         {Universidad Nacional de Colombia}
         {Manizales}
@@ -78,72 +89,31 @@
         {}
 
 
-\section{Research~papers}
+\section{Relevant~Research~papers}
 
-\cventry{February 2017}
-        {%
-            Spontaneous Perpendicular Anisotropy in Ultra-thin Ferromagnetic
-            Films
-        }
-        {Journal of Superconductivity and Novel Magnetism}
-        {Springer}
+\cventry{March 2018}
+        {Vegas: Software package for the atomistic simulation of magnetic materials}
+        {Revista Mexicana de Física}
+        {Sociedad Mexicana de Física}
+        {DOI:\@ \href{https://doi.org/10.31349/RevMexFis.64.490}{10.31349/RevMexFis.64.490}}
         {}
-        {DOI:\@ 10.1007/s10948--017--4005--9}
 
-\cventry{February 2017}
-        {%
-            Surface anisotropy and particle size influence on hysteresis loops
-            in La2/3Ca1/3MnO3 nanoparticles: A simulation approach
-        }
-        {Journal of Magnetism and Magnetic Materials}
+\cventry{March 2018}
+        {Atomistic modelling of magnetic nano-granular thin films}
+        {Physica E:\@ Low-dimensional Systems and Nanostructures}
         {Elsevier}
-        {}
-        {DOI:\@ 10.1016/j.jmmm.2016.10.108}
-
-\cventry{June 2016}
-        {%
-            Implementation details of a variational method to solve the time
-            independent Schrödinger equation.
-        }
-        {Revista mexicana de física E}
-        {Sociedad mexicana de física}
-        {}
+        {DOI:\@ \href{https://doi.org/10.1016/j.physe.2017.11.017}{10.1016/j.physe.2017.11.017}}
         {}
 
 \cventry{December 2015}
         {Atomistic Simulation of static magnetic properties of bit patterned media}
         {Physica E}
         {Elsevier}
+        {DOI:\@ \href{https://doi.org/10.1016/j.physe.2015.12.016}{10.1016/j.physe.2015.12.016}}
         {}
-        {DOI:\@ 10.1016/j.physe.2015.12.016}
-
-\cventry{October 2014}
-        {%
-            Simulation of magnetotransport properties of
-            ferromagnetic/antiferromagnetic multilayers of manganites
-        }
-        {Journal of Superconductivity and Novel Magnetism}
-        {Springer}
-        {}
-        {DOI:\@ 10.1007/s10948--014--2827--2}
 
 
-\section{Recent Experience}
-
-\cventry{Feb. 2016\\--current}
-        {University professor}
-        {Universidad Nacional de Colombia}
-        {}
-        {}
-        {%
-            I deliver on-site courses to the department of exact and natural
-            sciences at the Universidad Nacional de Colombia, in a contract
-            basis. I delivered Simulation 1 for Engineering Physics in the
-            first term of 2016 and Informatics 3 for Engineering Physics in the
-            second term of 2016 and in the current term. Notes for the
-            Informatics 3 course are partially available at
-            \url{https://odarbelaeze.github.io/teaching}
-        }
+\section{Relevant~Experience}
 
 \cventry{Apr. 2016\\--current}
         {Full stack software engineer}
@@ -153,28 +123,22 @@
         {%
             I deliver full stack contractor software engineering services to
             \href{https://www.adroll.com/}{AdRoll} through
-            \href{http://www.bairesdev.com/}{BairesDev}. My main
-            responsibilities include to write and mantain backend and frontend
-            code that allow advertisers to run native ad campaigns through
-            AdRoll.
+            \href{http://www.bairesdev.com/}{BairesDev}. My responsibilities
+            include writing and maintaining code that allows advertisers to run
+            native ad campaigns through AdRoll, both in the backend and
+            frontend.
         }
 
-\cventry{Mar. 2015\\--Mar. 2016}
-        {Scientific technology consultant}
-        {Universidad Nacional de Colombia}
-        {}
+\cventry{Jul. 2016\\--Aug. 2016}
+        {Summer intern}
+        {Computational Magnetism Group, University of York}
+        {United Kindom}
         {}
         {%
-            Mainly I had to give advice and aid the process of purchasing a
-            small high performance computing cluster for a research group in
-            the Department of Physics of the university, furthermore I had to
-            install the cluster out of the bare bone servers in order to
-            optimize the cost and perform maintenance operations. Furthermore,
-            my responsibilities included teaching people how to take advantage
-            of the cluster and to build a website to improve the communication
-            process within and outside the research group. The main
-            accomplishment I achieved during this time was to have a 100\%
-            occupancy for several months.
+            In this internship I had the responsibility giving the finishing
+            touches and benchmark the CUDA support module for the
+            \textsc{Vampire} physics simulation code. The code is available
+            at \url{http://vampire.york.ac.uk/}.
         }
 
 \cventry{May. 2015\\--Jul. 2015}
@@ -187,8 +151,7 @@
             development team and code in order to add a new feature to the
             \textsc{Vampire} physics simulation code. The challenge of the
             project was to integrate CUDA support into a mainly serial and MPI
-            C++ codebase. The feature is still in PR waiting for polising and
-            approval \url{https://github.com/richard-evans/vampire/pull/4}
+            C++ codebase.
         }
 
 \cventry{May. 2015\\--Jul. 2015}
@@ -199,77 +162,76 @@
         {%
             For this job I had a managerial position where I had to lead a
             small development team in order to deliver a production version of
-            the Tree of Science tool now hosted at \url{http://tos.manizales.unal.edu.co}.
-            The main challenge here was the poor timing for starting the
-            project because I spent most of the development cycle halfway
-            across the world. Therefore, I had to learn how to communicate
-            effectively with my team from far away and then assuming the
-            responsibility as a manager for the missteps of the team and
-            finally manage to deliver the product on time.
+            the Tree of Science tool now hosted at
+            \url{http://tos.manizales.unal.edu.co}.
         }
 
-\cventry{Sept. 2014\\--Feb. 2015}
-        {Project: Web tools for smart selection of scientific articles applying network analysis}
-        {Universidad Nacional de Colombia}
-        {}
-        {}
+
+\section{Relevant~Event~Participation}
+
+\cventry{August\\2017}
+        {Taller de Introducción a R y R Studio}
         {%
-            Aid in the research and analysis of network algorithms (graph
-            algorithms) and indicator definition; Design and deliver a workshop
-            on scientific data analysis with python. The main product was a
-            working prototype of the toll called Tree of Science (ToS), which
-            aims to deliver guidance to young and experienced scientist about
-            the scientific literature they should read in order to understand a
-            topic.
+            Nodo Nacional de Bioinformática, Comunidad de Desarrolladoresde
+            Sofware en Bioinformática, Centro de Ciencias Genómicas (CCG)
         }
+        {Cuernavaca, Mexico}
+        {Jul 30 --- Aug 3, 2018}
+        {(Teacher)}
 
-\cventry{Feb. 2013\\--Feb. 2015}
-        {Scholarship holder}
-        {Universidad Nacional de Colombia}
-        {}
-        {}
+\cventry{December\\2017}
+        {CODATA-RDA School on Data Science}
+        {CODATA, Research Data Aliance, ICTP-SAIFR, Universidade Estadual Paulista}
+        {São Paulo, Brasil}
+        {Nov 30 --- Dec 16, 2017}
+        {(Helper)}
+
+\cventry{July\\2017}
+        {2017 CODATA-RDA Research Data Science Summer School}
+        {CODATA, Research Data Aliance, Abdus Salam International Centre for Theoretical Physics}
+        {Trieste, Italy}
+        {July 10 --- 28, 2017}
+        {(Participant)}
+
+\cventry{May\\2015}
+        {Workshop on accelerated high performance computing in computational sciences}
+        {Abdus Salam International Centre for Theoretical Physics}
+        {Trieste, Italy}
+        {May 25 --- June 5, 2015}
+        {(Participant)}
+
+\cventry{March\\2014}
+        {LAMMPS Users and Developers Workshop and Symposium}
+        {Abdus Salam International Centre for Theoretical Physics}
+        {Trieste, Italy}
+        {March 10 --- 21, 2014}
+        {(Participant)}
+
+\cventry{March\\2014}
         {%
-            Scholarship holder and researcher in the academic work-group PCM
-            Computational Applications
+            Advanced Techniques for Scientific Programming and Management
+            of Open Source Software Packages
         }
+        {Abdus Salam International Centre for Theoretical Physics}
+        {Trieste, Italy}
+        {March 24 --- 28, 2014}
+        {(Participant)}
 
-\cventry{Aug. 2013\\--Dec. 2016}
-        {IT Consultant}
-        {Fundación Alas de Cristal}
+
+\section{Complementary~Education}
+
+\cventry{Spring\\2018}
+        {Software carpentry instructor certification}
         {}
+        {Software carpentry}
+        {Erin Becker}
+        {April 9, 2018}
+
+\cventry{Fall\\2013}
+        {Machine Learning}
         {}
-        {%
-            My main responsibilities are deliver and maintain the website of
-            the foundation currently hosted at \url{http://alasdecristal.org}
-            and facilitate the relationships of the foundation with other
-            bussiness in the technology sector.
-        }
-
-
-\section{Languages}
-
-\cvlanguage{Spanish}
-           {Native}
-           {}
-
-\cvlanguage{English}
-           {Near-Native}
-           {}
-
-
-\section{Computer~skills}
-
-\cvcomputer{OS}            {Linux\\Windows\\MacOS}
-           {Admin}         {AWS\\Docker\\Nginx}
-
-\cvcomputer{Programming}   {C/C++\\FORTRAN\\Java\\Python\\JavaScript}
-           {Automation}    {Autotools\\Dist Utils\\Unittest\\Gulp\\CMake}
-
-\cvcomputer{Scientific}    {NumPy\\SciPy\\Matplotlib\\Bokhe\\Pandas}
-           {Typography}    {pandoc\\markdown\\\LaTeX{}\\\LyX{}}
-
-
-\cvcomputer{Web~design}    {React\\ES6\\HTML5\\sass}
-           {Backend}       {Flask\\Django}
+        {Coursera}
+        {Associate Professor Andrew Ng, Computer Science Department, Stanford University}
+        {November 12, 2013}
 
 \end{document}
