@@ -28,7 +28,7 @@
 % optional
 % \address{street and number}{postcode city}
 % '\\' adds a line break
-\address{Carrera 23  \#55A--35}{Manizales, Colombia}
+\address{Calle 62A  \#18--97}{Manizales, Colombia}
 
 % optional
 % \phone{+57(6) 890 6069}
@@ -37,24 +37,28 @@
 % optional
 %\fax{+43(0)999 7777}
 % optional
-\email{odarbelaeze@unal.edu.co}
+\email{odarbelaeze@gmail.com}
 % optional
-\extrainfo{github.com/odarbelaeze}
-
-% optional
-% \photo[height]{name}
-% 'height' is the height the picture is resized to
-% 'name' is the name of the picture file
-% \photo[64pt]{CV-image}
-
-% optional
-% \quote{"Everyone wants to be in the upper hand."}
+\extrainfo{%
+    \href{https://github.com/odarbelaeze}{github.com/odarbelaeze}
+}
 
 \makeatother
 
 \providecommand{\LyX}{\texorpdfstring%
   {L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX\@}
   {LyX}}
+
+\newcommand*{\cvreference}[7][.25em]{%
+    \cvitem[#1]{\color{color1}$\bullet$}{%
+    \ifthenelse{\equal{#2}{}}{}{\textbf{#2}\newline}%
+    \ifthenelse{\equal{#3}{}}{}{#3\newline}%
+    \ifthenelse{\equal{#4}{}}{}{\addresssymbol~#4\newline}%
+    \ifthenelse{\equal{#5}{}}{}{#5\newline}%
+    \ifthenelse{\equal{#6}{}}{}{\emailsymbol~\href{mailto:#6}{\texttt{#6}}\newline}%
+    \ifthenelse{\equal{#7}{}}{}{\phonesymbol~#7}
+}}
+
 
 \begin{document}
 
@@ -83,6 +87,13 @@
         {}
 
 \section{Artículos~científicos}
+
+\cventry{March 2018}
+        {Vegas: Software package for the atomistic simulation of magnetic materials}
+        {Revista Mexicana de Física}
+        {Sociedad Mexicana de Física}
+        {}
+        {DOI:\@ \href{https://doi.org/10.31349/RevMexFis.64.490}{10.31349/RevMexFis.64.490}}
 
 \cventry{March 2018}
         {Atomistic modelling of magnetic nano-granular thin films}
@@ -141,7 +152,103 @@
 
 \section{Experiencia}
 
-\cventry{Sept. 2014\\--actual}
+\cventry{Nov. 2019\\--actual}
+        {Ingeniero de Software --- Full Stack}
+        {BairesDev}
+        {}
+        {}
+        {%
+            En este trabajo mi responsabilidad se centra en proveer servicios
+            de desarrollo de software full stack a la compañía
+            \href{https://www.adroll.com/}{AdRoll} a través de
+            \href{http://www.bairesdev.com/}{BairesDev}.
+        }
+
+\cventry{Jul. 2019\\--Oct. 2019}
+        {Contratista en Desarrollo de Software}
+        {Acaris Labs S.A.S}
+        {}
+        {}
+        {%
+            En este contrato mis responsabilidades se centraban en el
+            desarrollo de una integracion entre el software del cliente
+            \href{https://www.playvox.com/}{PlayVox} y la plataforma
+            \url{https://www.wixanswers.com/}.
+        }
+
+\cventry{Feb. 2019\\--Nov. 2019}
+        {Asistente Doctoral}
+        {EPFL}
+        {Suiza}
+        {}
+        {%
+            En este trabajo mis responsabilidades consistían en colaborar con
+            el trabajo del grupo de investigación
+            \href{http://theossrv1.epfl.ch/}{Theos} mientras realizaba mis
+            actividades de formación doctoral en materiales de los materiales.
+            \textit{(Esta actividad y la formació doctoral se vieron
+            interrumpidas por problemas de salud)}
+        }
+
+\cventry{Abr. 2016\\--Feb. 2019}
+        {Ingeniero de Software --- Full Stack}
+        {BairesDev}
+        {}
+        {}
+        {%
+            En este trabajo mi responsabilidad era proveer servicios de desarrollo
+            de software full stack a la compañía
+            \href{https://www.adroll.com/}{AdRoll} a través de
+            \href{http://www.bairesdev.com/}{BairesDev}.
+        }
+
+\cventry{Feb. 2016\\--May. 2017}
+        {Profesor Universitario}
+        {Universidad Nacional de Colombia}
+        {}
+        {}
+        {%
+            Orienté las asignaturas: Simulación 1 para Ingeniería Física e
+            Informática 3 para ingeniería física.
+        }
+
+\cventry{Mar. 2015\\--Mar. 2016}
+        {Consultor científico en tecnología}
+        {Universidad Nacional de Colombia}
+        {}
+        {}
+        {%
+            Principalmente, mis responsabilidades se centraban en auyudar en
+            el proceso de compra de un pequeño cluster de computacion de alto
+            rendimiento.
+        }
+
+\cventry{Jul. 2016\\--Ago. 2016}
+        {Pasante}
+        {Computational Magnetism Group, University of York}
+        {Reino Unido}
+        {}
+        {%
+            En esta pasantía tuve la responsabilidad de darle los toques finales
+            y realizar pruebas de rendimiento al módulo de soporte CUDA del paquete
+            de simulación \textsc{Vampire}.
+            \url{http://vampire.york.ac.uk/}
+        }
+
+\cventry{May. 2015\\--Jul. 2015}
+        {Pasante}
+        {Computational Magnetism Group, University of York}
+        {Reino Unido}
+        {}
+        {%
+            En esta pasantía tuve la responsabilidad de liderar un pequeño
+            equipo de desarrollo de software para añadir una nueva característica
+            al paquiete de simulación \textsc{Vampire}. El reto de este proyecto
+            era integrar el soporte para CUDA en el código del paquete.
+            \url{https://vampire.york.ac.uk}
+        }
+
+\cventry{Sept. 2014\\--Jul. 2015}
         {%
             Proyecto: aplicación web para selección inteligente de
             artículos científicos
@@ -156,7 +263,7 @@
             de datos científicos usando python.
         }
 
-\cventry{Feb. 2013\\--actual}
+\cventry{Feb. 2013\\--Feb. 2015}
         {Becario}
         {Universidad Nacional de Colombia}
         {}
@@ -166,7 +273,7 @@
             PCM Computational Applications.
         }
 
-\cventry{Ago. 2013\\--actual}
+\cventry{Ago. 2013\\--Dec. 2016}
         {Desarrollador web}
         {Fundación Alas de Cristal}
         {}
@@ -250,6 +357,44 @@
 
 
 \section{Participación~en~eventos}
+
+\cventry{Agosto\\2017}
+        {Taller de Introducción a R y R Studio}
+        {%
+            Nodo Nacional de Bioinformática, Comunidad de Desarrolladoresde
+            Sofware en Bioinformática, Centro de Ciencias Genómicas (CCG)
+        }
+        {Cuernavaca, México}
+        {Jul 30 --- Ago 3, 2018}
+        {(Asistente profesoral)}
+
+\cventry{Diciembre \\2017}
+        {CODATA-RDA School on Data Science}
+        {CODATA, Research Data Aliance, ICTP-SAIFR, Universidade Estadual Paulista}
+        {São Paulo, Brasil}
+        {Nov 30 --- Dic 16, 2017}
+        {(Asistente profesoral)}
+
+\cventry{Julio\\2017}
+        {2017 CODATA-RDA Research Data Science Summer School}
+        {CODATA, Research Data Aliance, Abdus Salam International Centre for Theoretical Physics}
+        {Trieste, Italia}
+        {Julio 10 --- 28, 2017}
+        {(Participante)}
+
+\cventry{Julio\\2015}
+        {20th International conference on magnetism}
+        {Club español de magnetismo}
+        {Barcelona, España}
+        {Julio 5 --- 10, 2015}
+        {(Poster)}
+
+\cventry{Mayo\\2015}
+        {Workshop on accelerated high performance computing in computational sciences}
+        {Abdus Salam International Centre for Theoretical Physics}
+        {Trieste, Italia}
+        {May 25 --- Jun 5, 2015}
+        {(Participante)}
 
 \cventry{Septiembre\\2014}
         {2nd Workshop on Statistical Physics}
